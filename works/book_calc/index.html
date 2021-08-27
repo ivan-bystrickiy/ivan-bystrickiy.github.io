@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+
+  <!-- Подключаем Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha512-usVBAd66/NpVNfBge19gws2j6JZinnca12rAe2l+d+QkLU9fiG02O1X8Q6hepIpr/EYKZvKx/I9WsnujJuOmBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- NoUiSlider -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.css" integrity="sha512-40vN6DdyQoxRJCw0klEUwZfTTlcwkOLKpP8K8125hy9iF4fi8gPpWZp60qKC6MYAFaond8yQds7cTMVU8eMbgA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Наши стили -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Content -->
+  <div class="wrapper">
+
+    <form class="bookCalc border-success">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <b class="mb-3 d-block">Выберите ориентацию</b>
+            <!-- 20x30 -->
+            <div class="form-group">
+              <label>
+                <input type="radio" name="orientation" value="100" checked>  
+                20x30
+              </label>
+            </div>
+            <!-- 15x20 -->
+            <div class="form-group">
+              <label>
+                <input type="radio" name="orientation" value="150">  
+                15x20
+              </label>
+            </div>
+            <!-- 20x15 -->
+            <div class="form-group">
+              <label>
+                <input type="radio" name="orientation" value="160">  
+                20x15
+              </label>
+            </div>
+            <!-- 20x20 -->
+            <div class="form-group">
+              <label>
+                <input type="radio" name="orientation" value="170">  
+                20x20
+              </label>
+            </div>
+            <!-- 15x15 -->
+            <div class="form-group">
+              <label>
+                <input type="radio" name="orientation" value="180">  
+                15x15
+              </label>
+            </div>
+          </div>
+          <div class="col-4">
+            <b class="mb-3 d-block">Дизайн</b>
+            <!-- Тема -->
+            <div class="form-group">
+              <label>
+                <input type="radio" name="design" value="100" checked>  
+                Готовая тема
+              </label>
+            </div>
+            <!-- Простой -->
+            <div class="form-group">
+              <label>
+                <input type="radio" name="design" value="150">  
+                Простой дизайн
+              </label>
+            </div>
+            <!-- Индивидуальный -->
+            <div class="form-group">
+              <label>
+                <input type="radio" name="design" value="300">  
+                Индивидуальный дизайн
+              </label>
+            </div>
+          </div>
+          <div class="col-4">
+            <b class="mb-3 d-block">Дополнительные параметры</b>
+            <!-- Кожа -->
+            <div class="form-group">
+              <label>
+                <input type="checkbox" name="dops" value="1000" checked>  
+                Кожаная обложка
+              </label>
+            </div>
+            <!-- Золото -->
+            <div class="form-group">
+              <label>
+                <input type="checkbox" name="dops" value="1500">  
+                Золотой срез
+              </label>
+            </div>
+            <!-- Фоторамка -->
+            <div class="form-group">
+              <label>
+                <input type="checkbox" name="dops" value="3000">  
+                Фоторамка
+              </label>
+            </div>
+          </div>
+          <div class="col-12 mt-3">
+            <div class="form-group">
+              <b class="d-block mb-5">Количество страниц</b>
+              <div class="pages"></div>
+              <input type="number" name="pages" class="d-none" value="10">
+              <!-- <input type="range" name="pages" class="w-100" min="6" max="30" value="10">
+              <div class="d-flex justify-content-between">
+                <span>6</span>
+                <span>30</span>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-between mt-5">
+            <div class="h3 m-0">
+              Итого: <span class="price">0</span> сом
+            </div>
+
+            <button class="btn btn-success rounded-pill">
+              Заказать фотокнигу
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+  <!-- Подключаем библиотеку jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <!-- NoUiSlider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js" integrity="sha512-jWNpWAWx86B/GZV4Qsce63q5jxx/rpWnw812vh0RE+SBIo/mmepwOSQkY2eVQnMuE28pzUEO7ux0a5sJX91g8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Наш скрипт -->
+  <script src="app.js"></script>
+</body>
+</html>

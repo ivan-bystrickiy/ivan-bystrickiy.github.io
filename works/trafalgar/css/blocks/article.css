@@ -1,0 +1,44 @@
+.article {
+  /*  */
+}
+
+.article__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article__card {
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 100%;
+  max-width: 350px;
+
+  background: #FFFFFF;
+
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  margin-bottom: 32px;
+}
+
+.article__card-content {
+  padding: 35px;
+}
+
+.article__card-img {
+  padding-top: 68%;
+  position: relative;
+}
+
+.article__card-img > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}

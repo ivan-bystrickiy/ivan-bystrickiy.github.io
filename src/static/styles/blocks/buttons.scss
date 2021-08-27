@@ -1,0 +1,23 @@
+button {
+  cursor: pointer;
+}
+
+.btn {
+  padding: 11px 30px;
+  border: none;
+  border-radius: 0;
+  background: none;
+  font-size: 16px;
+  line-height: 149%;
+  font-family: $main-font;
+  transition: background .1s;
+}
+
+.btn-primary {
+  background: $dark;
+  color: $white;
+
+  &:hover {
+    background: $primary;
+  }
+}

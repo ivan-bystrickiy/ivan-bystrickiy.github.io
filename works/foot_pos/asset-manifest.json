@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a09145f5.chunk.css",
+    "main.js": "/static/js/main.c8e72965.chunk.js",
+    "main.js.map": "/static/js/main.c8e72965.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bca3758b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bca3758b.js.map",
+    "static/js/2.cf9dbf05.chunk.js": "/static/js/2.cf9dbf05.chunk.js",
+    "static/js/2.cf9dbf05.chunk.js.map": "/static/js/2.cf9dbf05.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.a09145f5.chunk.css.map": "/static/css/main.a09145f5.chunk.css.map",
+    "static/js/2.cf9dbf05.chunk.js.LICENSE.txt": "/static/js/2.cf9dbf05.chunk.js.LICENSE.txt",
+    "static/media/01.png": "/static/media/01.c94b1a13.png",
+    "static/media/02.png": "/static/media/02.c94b1a13.png",
+    "static/media/03.png": "/static/media/03.c94b1a13.png",
+    "static/media/04.png": "/static/media/04.4d818e35.png",
+    "static/media/05.png": "/static/media/05.4d818e35.png",
+    "static/media/06.png": "/static/media/06.4d818e35.png",
+    "static/media/07.png": "/static/media/07.067c4276.png",
+    "static/media/08.png": "/static/media/08.067c4276.png",
+    "static/media/09.png": "/static/media/09.067c4276.png",
+    "static/media/10.png": "/static/media/10.a73a195c.png",
+    "static/media/11.png": "/static/media/11.a73a195c.png",
+    "static/media/12.png": "/static/media/12.a73a195c.png",
+    "static/media/13.png": "/static/media/13.fdcb05a3.png",
+    "static/media/14.png": "/static/media/14.fdcb05a3.png",
+    "static/media/15.png": "/static/media/15.fdcb05a3.png",
+    "static/media/Icon-Fill-checkmark-circle.28d45c95.svg": "/static/media/Icon-Fill-checkmark-circle.28d45c95.svg",
+    "static/media/Icon-Line-Card.d5b31768.svg": "/static/media/Icon-Line-Card.d5b31768.svg",
+    "static/media/Icon-Line-Iconly-Light outline-Wallet.8296c862.svg": "/static/media/Icon-Line-Iconly-Light outline-Wallet.8296c862.svg",
+    "static/media/Icon-Line-Paypal.352822c3.svg": "/static/media/Icon-Line-Paypal.352822c3.svg",
+    "static/media/style.scss": "/static/media/icomoon.f939f47f.eot",
+    "static/media/logo.ce7fdb1b.svg": "/static/media/logo.ce7fdb1b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bca3758b.js",
+    "static/js/2.cf9dbf05.chunk.js",
+    "static/css/main.a09145f5.chunk.css",
+    "static/js/main.c8e72965.chunk.js"
+  ]
+}

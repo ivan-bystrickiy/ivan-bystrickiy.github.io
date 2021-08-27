@@ -1,0 +1,11 @@
+{
+  "name": "book_calc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "browser-sync start --server --files \"*\""
+  },
+  "author": "",
+  "license": "ISC"
+}

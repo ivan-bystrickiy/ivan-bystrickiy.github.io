@@ -1,0 +1,30 @@
+.promo {
+  max-width: 270px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 15%;
+
+  &__avatar {
+    width: 106px;
+    height: 106px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &__links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-right: 25px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

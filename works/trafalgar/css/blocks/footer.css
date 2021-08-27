@@ -1,0 +1,49 @@
+.footer {
+  background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+  padding: 7% 0;
+  color: #fff
+}
+
+.footer > .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__col {
+  width: 20%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footer__col:first-child {
+  width: 40%;
+}
+
+.f-nav ul {
+  padding: 0;
+  list-style: none;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 38px;
+}
+
+.f-nav__title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 60px;
+}
+
+.f-nav a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 780px) {
+  .footer__col {
+    width: 50%;
+  }
+
+  .footer__col:first-child {
+    width: 100%;
+  }
+}

@@ -1,0 +1,27 @@
+.app__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.app__item:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.app__item:nth-child(2n) > .app__item-content {
+  padding-left: 0;
+  padding-right: 10%;
+}
+
+.app__item:last-child {
+  margin-bottom: 0;
+}
+
+.app__item-img {
+  width: 60%;
+}
+
+.app__item-content {
+  width: 40%;
+  padding-left: 10%;
+}

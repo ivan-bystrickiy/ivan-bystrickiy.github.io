@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha512-usVBAd66/NpVNfBge19gws2j6JZinnca12rAe2l+d+QkLU9fiG02O1X8Q6hepIpr/EYKZvKx/I9WsnujJuOmBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Калькулятор-визуализатор</title>
+  </head>
+  <body>
+    <div class="container">
+      <input type="range" value="10" min="1" max="30" oninput="console.log(event.target.value)" style="width: 100%"><br><br><br>
+      <form class="calc__form row">
+        <div class="col-12 col-md-6">
+          <div class="calc__step">
+            <h4 class="calc__step-title">Шаг 1</h4>
+            <label class="d-block my-2">Выберите тип ячеек</label>
+            <label class="custom-radio-input mr-2">
+              <input type="radio" name="type" value="sota" hidden checked><img src="img/sota.png"><span class="d-block text-center">Сота</span>
+            </label>
+            <label class="custom-radio-input mr-2">
+              <input type="radio" name="type" value="romb" hidden><img src="img/romb.png"><span class="d-block text-center">Ромб</span>
+            </label>
+          </div>
+          <div class="calc__preview mt-5 w-75"><img class="calc-capter romb" src="img/carpet/romb/01.png" style="visibility: hidden;"><img class="calc-capter sota" src="img/carpet/sota/01.png"><img class="calc-border" src="img/border/01.png"><img class="shildik" src="img/shildik.png" style="visibility: hidden"><img class="podpatnik" src="img/podpatnik.png" style="visibility: hidden"></div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="calc__step">
+            <h4 class="calc__step-title">Шаг 2</h4>
+            <label class="d-block my-2">Выберите цвет коврика</label>
+            <label class="custom-radio-input mr-2">
+              <input type="radio" name="capter-color" value="01" hidden checked><img src="img/colors/01.png" width="30">
+            </label>
+            <label class="custom-radio-input mr-2">
+              <input type="radio" name="capter-color" value="02" hidden><img src="img/colors/02.png" width="30">
+            </label>
+            <label class="custom-radio-input mr-2">
+              <input type="radio" name="capter-color" value="04" hidden><img src="img/colors/04.png" width="30">
+            </label>
+            <label class="custom-radio-input mr-2">
+              <input type="radio" name="capter-color" value="06" hidden><img src="img/colors/06.png" width="30">
+            </label>
+          </div>
+          <div class="calc__step">
+            <h4 class="calc__step-title">Шаг 3</h4>
+            <label class="d-block my-2">Выберите цвет канта</label>
+            <label class="custom-radio-input mr-2">
+              <input type="radio" name="border-color" value="01" hidden checked><img src="img/colors/01.png" width="30">
+            </label>
+            <label class="custom-radio-input mr-2">
+              <input type="radio" name="border-color" value="02" hidden><img src="img/colors/02.png" width="30">
+            </label>
+            <label class="custom-radio-input mr-2">
+              <input type="radio" name="border-color" value="04" hidden><img src="img/colors/04.png" width="30">
+            </label>
+            <label class="custom-radio-input mr-2">
+              <input type="radio" name="border-color" value="06" hidden><img src="img/colors/06.png" width="30">
+            </label>
+          </div>
+          <div class="calc__step">
+            <h4 class="calc__step-title">Шаг 4</h4>
+            <label class="d-block my-2">Выберите комплектующие</label>
+            <div class="d-flex">
+              <div class="me-5"> 
+                <label class="custom-checkbox mb-2">
+                  <div> 
+                    <input type="checkbox" name="dop" value="150" data-dop="shild">
+                    <div></div>
+                  </div>
+                  <div><span>Шильдик</span><small>150 руб. за штуку</small></div>
+                </label>
+                <label class="custom-checkbox mb-2">
+                  <div> 
+                    <input type="checkbox" name="dop" value="500" data-dop="podp">
+                    <div></div>
+                  </div>
+                  <div><span>Подпятник</span><small>500 руб. за штуку</small></div>
+                </label>
+              </div>
+              <div> 
+                <label class="custom-checkbox mb-2">
+                  <div> 
+                    <input type="checkbox" name="dop" value="2300">
+                    <div></div>
+                  </div>
+                  <div><span>Ковер в багажник</span><small>от 2300 руб. за штуку</small></div>
+                </label>
+                <label class="custom-checkbox mb-2">
+                  <div> 
+                    <input type="checkbox" name="dop" value="500">
+                    <div></div>
+                  </div>
+                  <div><span>3D формовка</span><small>от 500 руб. за штуку</small></div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="calc__price"><span>Итого: </span><span class="price">2500</span><span> руб.</span></div>
+        </div>
+      </form>
+    </div><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="js/index.js"> </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+extends templates/main
+
+block variables
+  - var currentPageLink = 'blog.html'
+  - var title = 'Блог'
+  - var descr = 'Читай блог!'
+
+block content
+  include blocks/promo
+
+  hr
+
+  .container
+    each i in [1,2,3,4,5,6,7]
+      article.article
+        p.article__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl.
+        span.article__date December 23, 2020
+        a.article__link(href="blog-post.html")
+          span.hidden Читать далее
+
+block scripts

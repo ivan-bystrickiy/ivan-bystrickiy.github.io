@@ -1,0 +1,42 @@
+.title {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.title::after {
+  content: '';
+  display: inline-block;
+  width: 56px;
+  height: 2px;
+  background: currentColor;
+}
+
+.services {
+  position: relative;
+}
+
+.services__decor-1 {
+  position: absolute;
+  z-index: -1;
+  top: 18%;
+  left: 0;
+}
+
+.services__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services__card {
+  width: 100%;
+  max-width: 350px;
+  background: #fff;
+
+  padding: 55px 43px 43px;
+  box-shadow: 10px 40px 50px rgb(198 209 245);
+  border-radius: 20px;
+
+  margin: 0 17px 37px;
+}

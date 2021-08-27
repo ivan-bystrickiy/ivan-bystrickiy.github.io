@@ -1,0 +1,17 @@
+-
+  var links = [
+    { img: "tw.svg", link: "#" },
+    { img: "fb.svg", link: "#" },
+    { img: "goog.svg", link: "#" },
+    { img: "lid.svg", link: "#" },
+  ]
+
+.promo
+  img.promo__avatar(src="https://picsum.photos/100/300")
+  h1.h1 WP-Indigo
+  p Just another WordPress theme
+  ul.promo__links
+    each link in links
+      li
+        a(href=link.link)
+          img(src="img/"+link.img, alt="")

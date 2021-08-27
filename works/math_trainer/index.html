@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math game</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+  <div class="container py-3">
+    <h1 class="h1 text-center text-primary mb-5">-</h1>
+    
+    <div class="card">
+      <div class="card-body text-center bg-light">
+        <div class="display-1">---</div>
+      </div>
+    </div>
+
+    <div class="progress mt-1">
+      <div class="progress-bar" style="width: 0;"></div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col">
+        <button class="btn btn-primary btn-lg w-100" onclick="checkAnswer(0)">-</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary btn-lg w-100" onclick="checkAnswer(1)">-</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary btn-lg w-100" onclick="checkAnswer(2)">-</button>
+      </div>
+    </div>
+
+    <div class="text-center mt-3" id="result">-</div>
+
+    <button class="btn btn-dark mt-5 mx-auto btn-lg" style="display: block" onclick="startLevel()">Start!</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
