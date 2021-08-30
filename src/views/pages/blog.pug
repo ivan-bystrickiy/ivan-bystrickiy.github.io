@@ -1,14 +1,11 @@
 extends ../templates/main
 
 block variables
-  - var currentPageLink = 'blog.html'
+  - var currentPageLink = '/blog.html'
   - var title = 'Блог про Fronted - Иван Быстрицкий'
   - var descr = 'Путь разработчика c ZERO до HERO. Как учился, что делал, как ищу работу и работаю. О учебных проектах, практике и много интересного.'
 
 block content
-  include ../blocks/promo
-
-  hr
 
   -
     var posts = [
