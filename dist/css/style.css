@@ -168,6 +168,10 @@ hr::after {
 .promo__links li:last-child {
   margin-right: 0;
 }
+.promo__links img {
+  width: 18px;
+  height: auto;
+}
 
 .footer {
   text-align: center;
