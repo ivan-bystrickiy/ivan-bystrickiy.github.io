@@ -1,0 +1,30 @@
+extends ../templates/main
+
+block variables
+  - var currentPageLink = 'blog.html'
+  - var title = 'Блог про Fronted - Иван Быстрицкий'
+  - var descr = 'Путь разработчика c ZERO до HERO. Как учился, что делал, как ищу работу и работаю. О учебных проектах, практике и много интересного.'
+
+-
+  var posts = [
+    {
+      title: 'Тестовый пост в блог',
+      publish: '30 Августа, 2021',
+      slug: 'test-blog-post',
+    }
+  ]
+
+block content
+  include ../blocks/promo
+
+  hr
+
+  .container
+    each post in posts
+      article.article
+        p.article__text= post.title
+        span.article__date= post.publish
+        a.article__link(href="/blog/" + post.slug + ".html")
+          span.hidden Читать далее
+
+block scripts

@@ -1,0 +1,65 @@
+extends ../templates/main
+
+block variables
+  - var currentPageLink = 'about.html'
+  - var title = 'Иван Быстрицкий - Обо мне'
+  - var descr = 'Давайте познакомимся поближе. Здесь все что нужно знать обо мне. Резюме.'
+
+block content
+  .container
+    h1.h1 Обо мне
+    p Привет! Меня зовут Иван, мне 19 лет. Я начинаю свой путь в Frontend. Я люблю писать код, а компьютер и технику с детства ковырял. Люблю спорт, оттуда у меня есть черта никогда не сдаваться. Поначалу было сложно разобраться с этим программированием, ладно верстка - это было просто. Но спасибо моему ментору Данилу Савченко я научился решать любые проблемы при помощи гугла и твердолобости. Я не супер умный, но я готов идти до конца.
+    p Ниже будет перечислены мои скиллы. Сейчас я в поиске интересной команды в которой смогу бы быстро вырасти.
+
+    -
+      var lists = [
+        {
+          color: 'red',
+          title: 'Skills',
+          items: [
+            {
+              type: 'big',
+              text: 'HTML – Jade – Haml – Erb',
+            },
+            {
+              type: 'big',
+              text: 'HTML – Jade – Haml – Erb',
+            },
+            {
+              type: 'small',
+              text: 'HTML – Jade – Haml – Erb',
+            },
+            {
+              type: 'big',
+              text: 'HTML – Jade – Haml – Erb',
+            },
+          ]
+        },
+        {
+          color: 'green',
+          title: 'Projects',
+          items: [
+            {
+              type: 'big',
+              text: 'HTML – Jade – Haml – Erb',
+            },
+            {
+              type: 'big',
+              text: 'HTML – Jade – Haml – Erb',
+            },
+            {
+              type: 'extra-big',
+              text: 'HTML – Jade – Haml – Erb',
+            },
+          ]
+        }
+      ]
+    
+    each list in lists
+      h3.h3=list.title
+      
+      ul.list(class=list.color)
+        each item in list.items
+          li(clas=item.type)=item.text
+
+block scripts
