@@ -1,0 +1,30 @@
+extends ../templates/main
+
+block variables
+  - var currentPageLink = 'blog.html'
+  - var title = 'Портфолио - Иван Быстрицкий'
+  - var descr = 'Мои работы и проекты, которые я завершил и готов показать.'
+
+block content
+  include ../blocks/promo
+
+  hr
+
+  -
+    var works = [
+      {
+        title: 'Тестовый тестовая работа в портфолио',
+        publish: '30 Августа, 2021',
+        slug: 'test-portfolio-post',
+      }
+    ]
+
+  .container
+    each work in works
+      article.article
+        p.article__text= work.title
+        span.article__date= work.publish
+        a.article__link(href="/blog/" + work.slug + ".html")
+          span.hidden Читать далее
+
+block scripts

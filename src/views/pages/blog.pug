@@ -5,19 +5,19 @@ block variables
   - var title = 'Блог про Fronted - Иван Быстрицкий'
   - var descr = 'Путь разработчика c ZERO до HERO. Как учился, что делал, как ищу работу и работаю. О учебных проектах, практике и много интересного.'
 
--
-  var posts = [
-    {
-      title: 'Тестовый пост в блог',
-      publish: '30 Августа, 2021',
-      slug: 'test-blog-post',
-    }
-  ]
-
 block content
   include ../blocks/promo
 
   hr
+
+  -
+    var posts = [
+      {
+        title: 'Тестовый пост в блог',
+        publish: '30 Августа, 2021',
+        slug: 'test-blog-post',
+      }
+    ]
 
   .container
     each post in posts
