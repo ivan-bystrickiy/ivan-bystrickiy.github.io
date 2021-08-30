@@ -1,0 +1,44 @@
+extends ../templates/main
+
+block variables
+  - var currentPageLink = '/portfolio.html'
+  - var title = 'Food Pos - проект Ивана Быстрицкого'
+  - var descr = 'Реализация сложного интерфейса на React'
+
+block content
+  .container
+    //- Post
+    article.post
+      h1.h1.text-center Сложный интерфейс Food Pos
+
+      //- Post meta
+      div.post__meta
+        .post__meta-author
+          img(src="/img/avatar.jpeg", alt="")
+          span Иван Быстрицкий
+        i.dot
+        span.post__meta-date 25 Августа, 2021
+      
+      .post__content
+        img(src="/img/screenshots/food_pos.png", alt="", style="width: 100%")
+        p
+          b #react #redux #react-router #api #custom-ui-library
+        p Разработал приложение для ресторанов. Создал собственную UI библиотеку компонентов под проект. Грамотно разбил на компоненты интерфейс. Научился разрабатывать сложные элементы интерфейса.
+        h3 Какие функции были реализованы:
+        ul 
+          li Красивый переход по страницам
+          li Получение данных из мок апи
+          li Фильтрация данных
+          li Поиск
+          li Добавление в карзину
+          li Оформление заказа
+          li Валидация форм
+          li Разработка независимых ui компонентов
+        p
+    p
+      b Смотреть на GitHub: 
+      a(href="https://github.com/ivan-bystrickiy/food_pos", alt="Смотреть на GitHub", target="_blank") github.com/ivan-bystrickiy/food_pos
+    p
+      a.btn.btn-primary(href="/works/food_pos", target="_blank") Смотреть проект
+
+block scripts

@@ -1,7 +1,21 @@
 .article {
   margin-bottom: 34px;
-  display: flex;
   position: relative;
+
+  img {
+    opacity: .4;
+    transition: all .3s;
+  }
+
+  &:hover {
+    img {
+      opacity: 1;
+    }
+  }
+
+  &__data {
+    display: flex;
+  }
 
   &:last-of-type {
     margin-bottom: 0;

@@ -176,8 +176,17 @@ hr::after {
 
 .article {
   margin-bottom: 34px;
-  display: flex;
   position: relative;
+}
+.article img {
+  opacity: 0.4;
+  transition: all 0.3s;
+}
+.article:hover img {
+  opacity: 1;
+}
+.article__data {
+  display: flex;
 }
 .article:last-of-type {
   margin-bottom: 0;
@@ -300,4 +309,17 @@ button {
 
 .text-center {
   text-align: center;
+}
+
+.img-fluid {
+  width: 100%;
+  max-width: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.d-block {
+  display: block;
 }

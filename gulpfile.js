@@ -43,7 +43,7 @@ function watchFiles() {
   // pug
   watch('./src/views/**/*.pug', series(pugPages, pugBlog, pugPortfolio));
   // styles less
-  watch('./src/static/styles/**/*.less', series(styles));
+  watch('./src/styles/**/*.scss', series(styles));
 }
 
 exports.pugPages = pugPages

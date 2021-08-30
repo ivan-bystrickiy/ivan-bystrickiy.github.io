@@ -10,18 +10,21 @@ block content
   -
     var works = [
       {
-        title: 'Тестовый тестовая работа в портфолио',
-        publish: '30 Августа, 2021',
-        slug: 'test-portfolio-post',
+        title: 'FOOD POS - React приложение с собственной UI библиотекой',
+        publish: '25 Августа, 2021',
+        slug: 'food-pos-work',
+        screenshot: 'food_pos.png',
       }
     ]
 
   .container
     each work in works
       article.article
-        p.article__text= work.title
-        span.article__date= work.publish
-        a.article__link(href="/blog/" + work.slug + ".html")
+        img.img-fluid(src="/img/screenshots/" + work.screenshot)
+        .article__data
+          p.article__text= work.title
+          span.article__date= work.publish
+        a.article__link(href="/portfolio/" + work.slug + ".html")
           span.hidden Читать далее
 
 block scripts
