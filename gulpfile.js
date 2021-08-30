@@ -6,24 +6,17 @@ const pug = require('gulp-pug');
 const sass = require('gulp-sass');
 
 
-function htmlPug() {
-  return src('./src/pug/*.pug')
+function pugPages() {
+  return src('./src/views/pages/*.pug')
     .pipe(pug({ pretty: true }))
-    .pipe(dest('./build'))
+    .pipe(dest('./'))
     .on('end', browserSync.reload);
 }
 
 function styles() {
-  return src('./src/static/styles/style.less')
-    .pipe(less())
-    .pipe(dest('./build/css'))
-    .pipe(browserSync.stream());
-}
-
-function stylesSass() {
   return src('./src/static/styles/style.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(dest('./build/css'))
+    .pipe(dest('./dist/css'))
     .pipe(browserSync.stream());
 }
 
