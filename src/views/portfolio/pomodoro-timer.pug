@@ -1,0 +1,40 @@
+extends ../templates/main
+
+block variables
+  - var currentPageLink = ''
+  - var title = 'Pomodoro Timer - проект Ивана Быстрицкого'
+  - var descr = 'Крутой, удобный таймер для техники помедоров'
+
+block content
+  .container
+    //- Post
+    article.post
+      h1.h1.text-center Крутой помидорка таймер
+
+      //- Post meta
+      div.post__meta
+        .post__meta-author
+          img(src="/img/avatar.jpeg", alt="")
+          span Иван Быстрицкий
+        i.dot
+        span.post__meta-date 25 Августа, 2021
+      
+      .post__content
+        img(src="/img/screenshots/pomodoro.png", alt="", style="width: 100%")
+        p
+          b #javascript #jquery #gulp
+        p Сделал классный таймер который реализует технику помидоров
+        h3 Какие функции были реализованы:
+        ul 
+          li Настройка таймера
+          li Полная реализация техники помидоров
+          li Красивый интерфейс
+          li Сборка Gulp
+        p
+    p
+      b Смотреть на GitHub: <br>
+      a(href="https://github.com/ivan-bystrickiy/pomodoro-timer", alt="Смотреть на GitHub", target="_blank") github.com/ivan-bystrickiy/pomodoro-timer
+    p
+      a.btn.btn-primary(href="/works/pomodoro_timer", target="_blank") Смотреть проект
+
+block scripts
