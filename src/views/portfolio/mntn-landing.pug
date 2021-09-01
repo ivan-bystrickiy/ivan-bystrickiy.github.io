@@ -1,0 +1,39 @@
+extends ../templates/main
+
+block variables
+  - var currentPageLink = ''
+  - var title = 'MNTN Landing - проект Ивана Быстрицкого'
+  - var descr = 'Красивый лендинг с анимациями'
+
+block content
+  .container
+    //- Post
+    article.post
+      h1.h1.text-center Лендинг с анимациями
+
+      //- Post meta
+      div.post__meta
+        .post__meta-author
+          img(src="/img/avatar.jpeg", alt="")
+          span Иван Быстрицкий
+        i.dot
+        span.post__meta-date 25 Августа, 2021
+      
+      .post__content
+        img(src="/img/screenshots/mntn.png", alt="", style="width: 100%")
+        p
+          b #parcel #parallax #animate #css #html
+        p Сверстал красивый лендинг с плавными, приятными анимациями
+        h3 Какие функции были реализованы:
+        ul 
+          li CSS Анимации
+          li JS Анимации
+          li Верстка на Sass, Pug
+        p
+    p
+      b Смотреть на GitHub: <br>
+      a(href="https://github.com/ivan-bystrickiy/mntn_landing", alt="Смотреть на GitHub", target="_blank") github.com/ivan-bystrickiy/mntn_landing
+    p
+      a.btn.btn-primary(href="/works/mntn", target="_blank") Смотреть проект
+
+block scripts
