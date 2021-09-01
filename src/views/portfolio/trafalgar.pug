@@ -1,0 +1,34 @@
+extends ../templates/main
+
+block variables
+  - var currentPageLink = ''
+  - var title = 'Адапривная верстка лендинга - проект Ивана Быстрицкого'
+  - var descr = 'Продуманная, адаптивная верстка сайта'
+
+block content
+  .container
+    //- Post
+    article.post
+      h1.h1.text-center Адапривная верстка лендинга
+
+      //- Post meta
+      div.post__meta
+        .post__meta-author
+          img(src="/img/avatar.jpeg", alt="")
+          span Иван Быстрицкий
+        i.dot
+        span.post__meta-date 25 Августа, 2021
+      
+      .post__content
+        img(src="/img/screenshots/trafalgar.png", alt="", style="width: 100%")
+        p
+          b #html #css #bem
+        p Сверстал лендинг, адаптивно, семантично, продуманно.
+        p
+    p
+      b Смотреть на GitHub: <br>
+      a(href="https://github.com/ivan-bystrickiy/trafalgar-landing", alt="Смотреть на GitHub", target="_blank") github.com/ivan-bystrickiy/trafalgar-landing
+    p
+      a.btn.btn-primary(href="/works/trafalgar", target="_blank") Смотреть проект
+
+block scripts

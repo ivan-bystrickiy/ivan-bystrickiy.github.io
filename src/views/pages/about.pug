@@ -14,45 +14,31 @@ block content
     -
       var lists = [
         {
-          color: 'red',
-          title: 'Skills',
+          title: 'Мой стек',
           items: [
             {
-              type: 'big',
-              text: 'HTML – Jade – Haml – Erb',
+              text: 'Git / GitFlow / Github - умею вести проекты в гите и разрабатывать в команде'
             },
             {
-              type: 'big',
-              text: 'HTML – Jade – Haml – Erb',
+              text: 'HTML5 / Semantic / SEO Basic - пишу чистую разметку, соблюдаю структуру'
             },
             {
-              type: 'small',
-              text: 'HTML – Jade – Haml – Erb',
+              text: 'CSS3 / BEM / Animations / Responsive - хорошо верстаю, адаптивно и немного с анимациями'
             },
             {
-              type: 'big',
-              text: 'HTML – Jade – Haml – Erb',
+              text: 'Sass / Pug / Gulp / Parcel - умею верстать многостраничные и большие сайты, разделяя по блокам и файлам, юзаю фичи шаблонизаторов и Sass'
+            },
+            {
+              text: 'jQuery, Bootstrap и другие популярные библиотеки'
+            },
+            {
+              text: 'JavaScript - могу решать задачи на чистом JS'
+            },
+            {
+              text: 'React / Redux / Router - умею разрабатывать SPA, свои функциональные компоненты, работать с Rest API, стейтом, обработкой форм и др.'
             },
           ]
         },
-        {
-          color: 'green',
-          title: 'Projects',
-          items: [
-            {
-              type: 'big',
-              text: 'HTML – Jade – Haml – Erb',
-            },
-            {
-              type: 'big',
-              text: 'HTML – Jade – Haml – Erb',
-            },
-            {
-              type: 'extra-big',
-              text: 'HTML – Jade – Haml – Erb',
-            },
-          ]
-        }
       ]
     
     each list in lists
@@ -60,6 +46,6 @@ block content
       
       ul.list(class=list.color)
         each item in list.items
-          li(clas=item.type)=item.text
+          li=item.text
 
 block scripts

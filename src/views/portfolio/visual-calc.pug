@@ -1,0 +1,34 @@
+extends ../templates/main
+
+block variables
+  - var currentPageLink = ''
+  - var title = 'Визуальный калькулятор - проект Ивана Быстрицкого'
+  - var descr = 'Умный калькулятор с визуализацией'
+
+block content
+  .container
+    //- Post
+    article.post
+      h1.h1.text-center Крутой помидорка таймер
+
+      //- Post meta
+      div.post__meta
+        .post__meta-author
+          img(src="/img/avatar.jpeg", alt="")
+          span Иван Быстрицкий
+        i.dot
+        span.post__meta-date 25 Августа, 2021
+      
+      .post__content
+        img(src="/img/screenshots/vcalc.png", alt="", style="width: 100%")
+        p
+          b #javascript #jquery #gulp
+        p Сделал классный калькулятор стоимости коврика для машины, а так же возможность сразу увидеть визуально товар в зависимости от выбранных параметров. Цена так же меняется.
+        p
+    p
+      b Смотреть на GitHub: <br>
+      a(href="https://github.com/ivan-bystrickiy/pomodoro-timer", alt="Смотреть на GitHub", target="_blank") github.com/ivan-bystrickiy/pomodoro-timer
+    p
+      a.btn.btn-primary(href="/works/pomodoro_timer", target="_blank") Смотреть проект
+
+block scripts
