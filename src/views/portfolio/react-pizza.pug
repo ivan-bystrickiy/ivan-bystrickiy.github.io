@@ -1,0 +1,39 @@
+extends ../templates/main
+
+block variables
+  - var currentPageLink = '/portfolio.html'
+  - var title = 'Food Pos - проект Ивана Быстрицкого'
+  - var descr = 'Реализация сложного интерфейса на React'
+
+block content
+  .container
+    //- Post
+    article.post
+      h1.h1.text-center Приложение магазина пицц
+
+      //- Post meta
+      div.post__meta
+        .post__meta-author
+          img(src="/img/avatar.jpeg", alt="")
+          span Иван Быстрицкий
+        i.dot
+        span.post__meta-date 25 Августа, 2021
+      
+      .post__content
+        img(src="/img/screenshots/react_pizza.png", alt="", style="width: 100%")
+        p
+          b #react #redux #react-router #api-mock
+        p Уверен подобные приложения уже многие видели, но я взял просто дизайн. Кодовая база была написана мной лично и получилось что то интересное.
+        h3 Какие функции были реализованы:
+        ul 
+          li Функционал корзины
+          li Получение данных из мок апи
+          li Разработка независимых ui компонентов
+        p
+    p
+      b Смотреть на GitHub: <br>
+      a(href="https://github.com/ivan-bystrickiy/react-pizza", alt="Смотреть на GitHub", target="_blank") github.com/ivan-bystrickiy/react-pizza
+    p
+      a.btn.btn-primary(href="/works/react_pizza", target="_blank") Смотреть проект
+
+block scripts
