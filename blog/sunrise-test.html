@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/css/style.css">
+    <title>Сделал тестовое задание в Sunrise</title>
+    <meta name="description" content="Тестовое задание в компанию">
+  </head>
+  <body>
+    <header class="header"><a class="nav__open" href="#menu"><img src="img/menu-open.svg" alt=""></a>
+      <nav class="nav" id="menu"><a class="nav__close" href="#close"><img src="img/menu-close.svg" alt=""></a>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">Обо мне</a></li>
+          <li><a href="/portfolio.html">Портфолио</a></li>
+          <li><a href="/blog.html">Блог</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <article class="post">
+        <h1 class="h1 text-center">Сделал тестовое задание в Sunrise</h1>
+        <div class="post__meta">
+          <div class="post__meta-author"><img src="/img/avatar.jpeg" alt=""><span>Иван Быстрицкий</span></div><i class="dot"></i><span class="post__meta-date">26 Сентября, 2021</span>
+        </div>
+        <div class="post__content"><img src="/img/screenshots/sunrise_test.png" alt="" style="width: 100%">
+          <p><b>#react</b></p>
+          <p>Задача:</p>
+          <p>
+            - создать одностраничное приложение (SPA) с минимальным набором зависимостей<br>
+            - создать форму, при нажатии иконки (+), добавляется еще одна форма для заполнения с N количеством инпутов (см пример картинки)<br>
+            + операции над ними (валидация/хранение состояний введеных данных/отправка собранного объекта (со всех форм) на домен - PUT https://domain.com/spa/sunrise/)
+            - использовать по возможности при этом - (замыкания/генераторы/асинхронность/коллбеки/hookies/)<br>
+            - плюсом будут комментарии к коду и чистота написания<br>
+            - верстка по желанию (можно взять любой bootstrap, либо "накидать" примитивные стили {будет плюс, увидеть как стилизуете инпуты})<br>
+            
+            Желательно, не использовать store-provider.<br>
+            
+            Ожидаемое время выполнения 2-3 дня (4-5ч) - к понедельнику, или можете начать с понедельника (к результату приложить ссылку в gitlab/github + если посчитаете нужным, добавьте описание в README.md)
+          </p>
+          <p></p>
+        </div>
+      </article>
+      <p><b>Смотреть на GitHub: <br></b><a href="https://github.com/ivan-bystrickiy/sunrise-awesome-forms-test" alt="Смотреть на GitHub" target="_blank">github.com/ivan-bystrickiy/sunrise-awesome-forms-test</a></p>
+      <p><a class="btn btn-primary" href="/works/sunrise_test" target="_blank">Смотреть работу</a></p>
+    </div>
+    <hr>
+    <footer class="footer"> 
+      <p class="label">2021 - Иван Быстрицкий</p>
+    </footer>
+  </body>
+</html>

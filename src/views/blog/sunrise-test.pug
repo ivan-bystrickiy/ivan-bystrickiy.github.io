@@ -1,0 +1,45 @@
+extends ../templates/main
+
+block variables
+  - var currentPageLink = ''
+  - var title = 'Сделал тестовое задание в Sunrise'
+  - var descr = 'Тестовое задание в компанию'
+
+block content
+  .container
+    //- Post
+    article.post
+      h1.h1.text-center Сделал тестовое задание в Sunrise
+
+      //- Post meta
+      div.post__meta
+        .post__meta-author
+          img(src="/img/avatar.jpeg", alt="")
+          span Иван Быстрицкий
+        i.dot
+        span.post__meta-date 26 Сентября, 2021
+      
+      .post__content
+        img(src="/img/screenshots/sunrise_test.png", alt="", style="width: 100%")
+        p
+          b #react
+        p Задача:
+        p.
+          - создать одностраничное приложение (SPA) с минимальным набором зависимостей<br>
+          - создать форму, при нажатии иконки (+), добавляется еще одна форма для заполнения с N количеством инпутов (см пример картинки)<br>
+          + операции над ними (валидация/хранение состояний введеных данных/отправка собранного объекта (со всех форм) на домен - PUT https://domain.com/spa/sunrise/)
+          - использовать по возможности при этом - (замыкания/генераторы/асинхронность/коллбеки/hookies/)<br>
+          - плюсом будут комментарии к коду и чистота написания<br>
+          - верстка по желанию (можно взять любой bootstrap, либо "накидать" примитивные стили {будет плюс, увидеть как стилизуете инпуты})<br>
+
+          Желательно, не использовать store-provider.<br>
+
+          Ожидаемое время выполнения 2-3 дня (4-5ч) - к понедельнику, или можете начать с понедельника (к результату приложить ссылку в gitlab/github + если посчитаете нужным, добавьте описание в README.md)
+        p
+    p
+      b Смотреть на GitHub: <br>
+      a(href="https://github.com/ivan-bystrickiy/sunrise-awesome-forms-test", alt="Смотреть на GitHub", target="_blank") github.com/ivan-bystrickiy/sunrise-awesome-forms-test
+    p
+      a.btn.btn-primary(href="/works/sunrise_test", target="_blank") Смотреть работу
+
+block scripts
